@@ -1,6 +1,6 @@
-# Numpy Plugin Example
+# Plugin for GOES 16/17 
 
-This is a simple plugin which uses numpy to compute some stats on a test image. While not very useful on its own, it serves as a starting point for other plugin developers.
+This is a simple plugin which downloads GOES 16/17 ABI Level-1b products from Amazon S3. 
 
 ## Overview
 
