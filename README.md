@@ -1,6 +1,6 @@
 # Plugin for GOES 16/17 
 
-This is a simple plugin which downloads GOES 16/17 ABI Level-1b products from Amazon S3. 
+This is a simple plugin which downloads GOES 16 or GOES 17 ABI Level-1b products from Amazon S3. 
 
 ## Overview
 
