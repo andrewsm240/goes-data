@@ -1,12 +1,10 @@
-name: "numpy-example"
-description: "Numpy example which computes some stats of a test frame."
+name: "goes-data"
+description: "Downloads GOES 16/17 ABI Level-1b products from Amazon S3."
 version: "0.1.0"
 source:
   architectures:
     - "linux/amd64"
     - "linux/arm64"
     - "linux/arm/v7"
-  url: "https://github.com/waggle-sensor/plugin-numpy-example"
+  url: "https://github.com/andrewsm240/goes-data"
   branch: "main"
-  testing:
-    command: ["test.py"]
