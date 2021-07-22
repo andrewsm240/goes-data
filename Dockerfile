@@ -3,7 +3,7 @@
 
 # First we choose the base image. For more info, see:
 # https://github.com/waggle-sensor/plugin-base-images
-FROM waggle/plugin-base:1.1.0-ml-cuda11.0-amd64
+FROM waggle/plugin-base:1.1.0-base
 # FROM python:3.9
 
 # Now we include the Python requirements.txt file and install any missing dependencies.
