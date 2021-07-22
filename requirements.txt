@@ -3,4 +3,6 @@ https://github.com/waggle-sensor/pywaggle/archive/refs/tags/0.43.1.zip
 
 # Custom Python modules. Please add your requirements below.
 numpy
-opencv-python
+s3f3
+datetime
+os
