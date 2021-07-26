@@ -54,6 +54,35 @@ def aws_list(year_name, month_name, day_name, starthour, startmin, endhour, endm
 def main():
 
     plugin.init()
+    
+    # Select satellite, ABI L1b product, view (only CONUS right now), band, date, and start/end times
+    satellite = 16
+    product_name = 'ABI-L1b-RadC'
+    view = 'CONUS'
+    year = 2019
+    month = 12
+    day = 11
+    start_hour = '15'
+    start_min = '00'
+    end_hour = '15'
+    end_min = '05'
+    band = '01'
+    
+    # Query AWS and list filenames
+    data = aws_list(year, month, day, start_hour, start_min, end_hour, end_min, satellite, view, band, product_name)
+    
+    # Save files to current working directory
+    #save_path = os.getcwd() + '/' 
+    
+    # Downloads files
+    if len(data) > 0:
+    for i in data:
+        filename = i.split('/')[-1]
+        print(filename) 
+        aws = s3fs.S3FileSystem(anon=True)
+        for x in data:
+            aws.get(x, save_path + x.split('/')[-1])
+    print('Download complete!')
 
 
 if __name__ == "__main__":
