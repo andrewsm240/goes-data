@@ -1,1 +1,2 @@
 https://github.com/waggle-sensor/goes-data
+Information on the 16 ABI bands can be found here: https://www.goes-r.gov/mission/ABI-bands-quick-info.html
