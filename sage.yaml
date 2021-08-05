@@ -1,5 +1,5 @@
 name: "goes-data"
-description: "Downloads GOES 16/17 ABI Level-1b products from Amazon S3."
+description: "Downloads GOES 16 ABI Level-1b products from Amazon S3."
 version: "0.1.0"
 source:
   architectures:
